@@ -1,0 +1,83 @@
+body {
+    background-color: #F9F7F5;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border: 1px solid #f0f0f0;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+table th {
+    padding: 10px;
+    background-color: #4EA524;
+    border: 1px solid black;
+    color: white;
+}
+
+table td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+}
+
+.dataCurrency {
+    display: flex;          
+    justify-content: center;    
+    align-items: center;          
+    gap: 10px;                
+    margin: 20px 0;            
+    flex-wrap: wrap;              
+}
+
+.dataCurrency input {
+    padding: 8px 14px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.dataCurrency button {
+    padding: 10.5px 15px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    background-color: #4EA524;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dataCurrency button:hover {
+    background-color: #057C48;
+}
+
+.dataCurrency button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+table tr:hover {
+    background-color: #b7f39aff;
+    transition: background-color 0.3s; 
+}
