@@ -41,14 +41,13 @@ h1 {
 
 .dataCurrency {
     display: flex;          
-    justify-content: center;    
-    align-items: center;          
+    justify-content: center;           
     gap: 10px;                
     margin: 20px 0;            
     flex-wrap: wrap;              
 }
 
-.dataCurrency input {
+.dataCurrency input, select {
     padding: 8px 0px;
     font-size: 16px;
     border-radius: 6px;
@@ -58,10 +57,11 @@ h1 {
     width: 200px;
     text-align: center;
     font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.dataCurrency button {
-    padding: 10.5px 0px;
+.dataCurrency button, .calculateButton {
+    padding: 13.5px 5px;
     font-size: 16px;
     border-radius: 6px;
     border: none;
@@ -70,10 +70,9 @@ h1 {
     cursor: pointer;
     transition: background-color 0.3s;
     width: 202px;
-}
-
-.dataCurrency button:hover {
-    background-color: #057C48;
+    &:hover{
+        background-color: #057C48;
+    }
 }
 
 .dataCurrency button:disabled {
@@ -84,4 +83,33 @@ h1 {
 table tr:hover {
     background-color: #b7f39aff;
     transition: background-color 0.3s; 
+}
+
+.result {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+select {
+    width: 202px;
+}
+
+.inputAmount {
+    padding: 9px 0px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s;
+    width: 200px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    height: 450px;
+    flex-direction: column;
+    align-items: center;
 }
